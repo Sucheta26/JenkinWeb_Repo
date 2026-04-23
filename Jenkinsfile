@@ -15,7 +15,7 @@ pipeline {
                 sh '''
                 echo "Deploying application..."
 
-                 sudo rm -rf /var/www/html/*
+                 rm -rf /var/www/html/*
                  cp -r * /var/www/html/
                  '''
             }
